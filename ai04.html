@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pdf预览</title>
+    <script src="./pdfobject.min.js"></script>
+    <style>
+        
+            html,body,.pdfCon{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="pdfCon"></div>
+    <script>
+        var pdfCon = document.querySelector(".pdfCon")
+        window.onload = function (){
+            PDFObject.embed("概率论与数理统计同济大学.pdf",pdfCon);
+        };
+    </script>
+
+</body>
+</html>
